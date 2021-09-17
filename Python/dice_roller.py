@@ -7,5 +7,7 @@ from random import randint
 print ("Automatic Dice Roller")
 
 while True:
-    x = input("Press Enter to Roll")
-    print(randint(0,6))
+    y = int(float(input("How many sides do you want on your dice?: ")))
+    z = int(float(input("How many dice do you want to roll?: ")))
+    x = int(float(input("Press Enter to Roll")))
+    print(randint(0,z*y*6))
