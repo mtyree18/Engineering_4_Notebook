@@ -50,3 +50,14 @@ N/A
 
 I learned how to use google more effectively to research my problems. I also figured out a good process to work on these problems by taking them one step at a time without 
 trying to immediately figure out exactly how the program will work
+
+
+#Quaratic_Calculator
+
+### Assignment Description
+
+The purpose of this assignment was to create a calculator that could take input for 3 variables and solve the quadratic formula with those variables.
+
+### Evidence
+
+Vanilla version: 
