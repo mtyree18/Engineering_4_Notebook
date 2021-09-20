@@ -1,38 +1,11 @@
 # Engineering_4_Notebook
-This repository will actually serve as a aid to help you get started with your own template.  You should copy the raw form of this readme into your own, and use this template to write your own.
-
-I didn't ask you to document hello_world.py or dice_roller.py. I'll start off with an example for dice_roller.py, and then you will reflect on calculator.py.
 
 ## Table of Contents
-* [Basics](#Basics)
 * [Python_Dice_Roller](#PythonDiceRoller)
 * [Python_Calculator](#Python_Calculator)
----
-
-## Basics
-You can delete this section from your own personal readme. 
-
-### Assignment Description
-
-Write your assignment description here. It should be at least a few sentences.
-
-### Evidence 
-
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does. For code only assignments like the Python calculator, include a screenshot of the output of the code.
-
-### Wiring
-
-This may not be applicable to all assignments. Anything where you wire something up, include the wiring diagram here.
-
-### Reflection
-
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
-** Don't forget to **COMMENT YOUR CODE** before you upload to Github!
 
 ## Python_Dice_Roller
 
-Okay so I am giving you a freebie so you have an example of the kind of reflections that I want. I'll start you off with an example for dice_roller.py, then its up to you to start your reflections with the Python calculator and all subsequent assignments. You can delete this section from your personal readme. 
 
 ### Assignment Description
 
@@ -61,12 +34,19 @@ This assignment was relatively simple, but was challenging because I had not cod
 
 ### Assignment Description
 
-Your turn! You will be writing a section of readme like this for all subsequent assignments.
+The purpose of this assignment was creating a calculator that could return the sum, product, quotient, difference, modulus, and factorials of two numbers. The program takes an input for the two numbers and then runs those two numbers through all the different formulas.
 
 ### Evidence 
 
+Vanilla version: ![Vanilla Calculator](https://user-images.githubusercontent.com/60942957/134040700-fb2ce50b-0426-4686-8a39-8f5432a14dae.png)
+
+Spicy Version: ![calculator py](https://user-images.githubusercontent.com/60942957/134040332-912cc3d9-19f6-4371-bae8-a2cc1ed31231.png)
 
 ### Wiring
 
+N/A
 
 ### Reflection
+
+I learned how to use google more effectively to research my problems. I also figured out a good process to work on these problems by taking them one step at a time without 
+trying to immediately figure out exactly how the program will work
