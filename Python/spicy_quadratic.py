@@ -39,5 +39,5 @@ while x == "":
     else:
         print("Root #1: " + str(findRoot1(a, b)))
         print("Root #2: " + str(findRoot2(a, b)))
-        print(f"The vertex form is y = (x - " + {xvertex} + ")^2 + " {yvertex})
+        print(f"The vertex form is y = (x-{xvertex})^2+{yvertex}")
     x = input("Press Enter to run again, press x then Enter to quit")
