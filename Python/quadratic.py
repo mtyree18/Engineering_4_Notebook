@@ -6,17 +6,9 @@
 
 from math import sqrt
 
-print("Quadratic Solver")
-print("Enter the coefficients for ax^2 + bx + c")
-a = int(input("Enter coefficient a"))
-b = int(input("Enter coefficient b"))
-c = int(input("Enter coefficient a"))
-
 def discriminant(a, b, c):
     d = (b * b) - 4 * a * c
     return d
-    
-dis = discriminant(a, b, c)
 
 def findRoot1(a, b):
     r1 = (-b + dis) / (2 * a)
@@ -32,18 +24,16 @@ def findSign(dis):
     else:
         s = ("positive")
     return s
-if(findSign(dis) == ("negative")):
-    print("There are no real roots")
-else:
-    print("Root #1: " + str(findRoot1(a, b)))
-    print("Root #2: " + str(findRoot2(a, b)))
+    
 x = input("Press Enter to run again, press x then Enter to quit")
+
 while x == "":
     print("Quadratic Solver")
     print("Enter the coefficients for ax^2 + bx + c")
     a = int(input("Enter coefficient a"))
     b = int(input("Enter coefficient b"))
-    c = int(input("Enter coefficient a"))
+    c = int(input("Enter coefficient c"))
+    dis = discriminant(a, b, c)
     if(findSign(dis) == ("negative")):
         print("There are no real roots")
     else:
