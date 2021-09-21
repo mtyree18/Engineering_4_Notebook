@@ -60,4 +60,6 @@ The purpose of this assignment was to create a calculator that could take input 
 
 ### Evidence
 
-Vanilla version: 
+Vanilla Version: ![quadratic py](https://user-images.githubusercontent.com/60942957/134203305-62ff7c04-f5dd-4bde-a2d2-df6823f59ccd.png)
+
+Spicy Version:
