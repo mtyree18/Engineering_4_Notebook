@@ -62,4 +62,5 @@ The purpose of this assignment was to create a calculator that could take input 
 
 Vanilla Version: ![quadratic py](https://user-images.githubusercontent.com/60942957/134203305-62ff7c04-f5dd-4bde-a2d2-df6823f59ccd.png)
 
-Spicy Version:
+Spicy Version: ![spicy_quadratic py](https://user-images.githubusercontent.com/60942957/134213566-fadd0069-a724-48e0-8da9-eeeb45d4091a.png)
+
