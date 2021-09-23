@@ -6,11 +6,14 @@
 
 def clearScreen():
     print ("\n" * 50)
+    
+def wordLength():
+    length = len(word)
+    print ("_" * length)
 
 word = input("Player 1 what's the word")
-length = len(word)
-print ("_" * length)
 
 clearScreen()
+wordLength()
 
 guess = input("Player 2, guess a letter")
