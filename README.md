@@ -82,3 +82,15 @@ The purpose of this assignment was to create a program that could take a sentenc
 
 ### Evidence
 
+![strings py](https://user-images.githubusercontent.com/60942957/134543813-9d21da5a-fb49-4341-99c5-240637a1c6b3.png)
+
+### Wiring
+
+N/A
+
+### Reflection
+
+In this assignment the goal included making the code as short as possible. I first made a 6 or 7 line functioning program. I needed some help from google on this one because
+I couldn't figure out how to replace items in a string, but I figured it out. Then I condensed the code by replacing variables with the actual value of those variables where I
+used the variables.
+
