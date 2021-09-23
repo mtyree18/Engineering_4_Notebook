@@ -64,3 +64,21 @@ Vanilla Version: ![quadratic py](https://user-images.githubusercontent.com/60942
 
 Spicy Version: ![spicy_quadratic py](https://user-images.githubusercontent.com/60942957/134213566-fadd0069-a724-48e0-8da9-eeeb45d4091a.png)
 
+### Wiring
+
+N/A
+
+### Reflection
+
+I used a lot of the same strategies in this program that I did in the calculator program. This program was much more involved as far as the amount of functions I needed goes, 
+but the basic strategy of going one step at a time was the same.
+
+
+# Strings and Loops
+
+### Assignment Description
+
+The purpose of this assignment was to create a program that could take a sentence and put each character on a new line. It can also replace the spaces with the dash symbol("-")
+
+### Evidence
+
