@@ -9,11 +9,16 @@ def clearScreen():
     
 def wordLength():
     length = len(word)
-    print ("_" * length)
+    print ("_ " * length)
 
 word = input("Player 1 what's the word")
 
 clearScreen()
 wordLength()
-
 guess = input("Player 2, guess a letter")
+letter = list(word)
+
+for x in letter:
+    if (guess == x):
+        letter = [l.replace(x, guess) for l in letter]
+        print(letter)
