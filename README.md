@@ -3,6 +3,7 @@
 ## Table of Contents
 * [Python_Dice_Roller](#PythonDiceRoller)
 * [Python_Calculator](#Python_Calculator)
+* [Quadratic Calculator](#Quadratic_Calculator)
 
 ## Python_Dice_Roller
 
@@ -52,7 +53,7 @@ I learned how to use google more effectively to research my problems. I also fig
 trying to immediately figure out exactly how the program will work
 
 
-#Quaratic_Calculator
+# Quadratic_Calculator
 
 ### Assignment Description
 
