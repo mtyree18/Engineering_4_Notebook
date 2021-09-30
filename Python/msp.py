@@ -8,17 +8,27 @@ def clearScreen():
     print ("\n" * 50)
     
 def wordLength():
-    length = len(word)
-    print ("_ " * length)
-
+    print (emptyString)
+    
 word = input("Player 1 what's the word")
-
-clearScreen()
-wordLength()
 guess = input("Player 2, guess a letter")
-letter = list(word)
+length = len(word)
+emptyString = ("_ " * length)
+correctGuess = ""
+missedGuess = ""
 
-for x in letter:
-    if (guess == x):
-        letter = [l.replace(x, guess) for l in letter]
-        print(letter)
+wordLength()
+
+while (True):
+    guess = input("Player 2, guess a letter")
+    for x in word:
+        if (guess == x):
+            correctGuess = correctGuess + guess
+        else:
+            missedGuess = missedGuess + guess
+    for i in range (0, len(word)):
+        if ((word[i]) in correctGuess):
+            emptyString = emptyString[:i] + guess + emptyString [i+1:]
+        else:
+            break
+    print (emptyString)
