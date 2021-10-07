@@ -25,9 +25,7 @@ def pinata():
         print("      \ ")
     elif (len(missedGuess) >= 6):
         print("     /\ ")
-        print("YOU LOSE HAHAHA")
-        
-        
+
 word = input("Player 1 what's the word")
 length = len(word)
 emptyString = ("_" * length)
@@ -36,7 +34,7 @@ missedGuess = ""
 
 wordLength()
 
-while (True):
+while (emptyString != word and len(missedGuess) != len(emptyString)):
     guess = input("Player 2, guess a letter")
     if (guess in word):
         correctGuess = correctGuess + guess
@@ -48,4 +46,10 @@ while (True):
     for i in range (0, len(word)):
         if ((word[i]) in correctGuess):
             emptyString = emptyString[:i] + word[i] + emptyString [i+1:]
-    print (emptyString)
+    print(emptyString)
+    if(len(correctGuess) == len(emptyString)):        
+        print("YOU WONNNNNNN!!!!!! YAYYYYYYYY")
+        break
+    if(len(missedGuess) == 6):
+        print("smh u suck")
+        break
