@@ -34,7 +34,7 @@ missedGuess = ""
 
 wordLength()
 
-while (emptyString != word and len(missedGuess) != len(emptyString)):
+while (emptyString != word):
     guess = input("Player 2, guess a letter")
     if (guess in word):
         correctGuess = correctGuess + guess
