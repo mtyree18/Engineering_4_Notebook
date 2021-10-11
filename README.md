@@ -4,6 +4,7 @@
 * [Python_Dice_Roller](#PythonDiceRoller)
 * [Python_Calculator](#Python_Calculator)
 * [Quadratic Calculator](#Quadratic_Calculator)
+* [Man Shaped Pinata](#MSP)
 
 ## Python_Dice_Roller
 
@@ -95,3 +96,21 @@ In this assignment the goal included making the code as short as possible. I fir
 I couldn't figure out how to replace items in a string, but I figured it out. Then I condensed the code by replacing variables with the actual value of those variables where I
 used the variables.
 
+
+#MSP
+
+### Assignment Description
+
+The purpose of this assignement was to create a hangman game that could be passed between two people.
+
+### Evidence
+
+
+
+### Wiring
+
+N/A
+
+### Reflection
+
+In this assignment I ran into many problems, and I feel like I got a good grasp on how to ask efficient questions. I also got a lot better at reading through my code and understanding exactly what was happening. This helped me correct many problems with my code.
