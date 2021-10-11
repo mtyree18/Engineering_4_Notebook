@@ -105,9 +105,13 @@ The purpose of this assignement was to create a hangman game that could be passe
 
 ### Evidence
 
-Winning: ![Screenshot 2021-10-11 2 44 32 PM](https://user-images.githubusercontent.com/60942957/136839290-b9fdb5be-c5e4-4f8f-b0e4-78e10e2a15cd.png)
+Winning: 
 
-Losing: ![image](https://user-images.githubusercontent.com/60942957/136839658-2b596a76-50e1-4a94-8132-2ec4531ba753.png)
+![Screenshot 2021-10-11 2 44 32 PM](https://user-images.githubusercontent.com/60942957/136839290-b9fdb5be-c5e4-4f8f-b0e4-78e10e2a15cd.png)
+
+Losing: 
+
+![image](https://user-images.githubusercontent.com/60942957/136839658-2b596a76-50e1-4a94-8132-2ec4531ba753.png)
 
 ### Wiring
 
