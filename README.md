@@ -78,7 +78,7 @@ I used a lot of the same strategies in this program that I did in the calculator
 but the basic strategy of going one step at a time was the same.
 
 
-# Strings and Loops
+# Strings_and_Loops
 
 ### Assignment Description
 
