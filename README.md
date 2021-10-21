@@ -124,6 +124,25 @@ N/A
 In this assignment I ran into many problems, and I feel like I got a good grasp on how to ask efficient questions. I also got a lot better at reading through my code and understanding exactly what was happening. This helped me correct many problems with my code.
 
 
+# Swing Arm
+
+### Assignment Description
+
+This assignment asked me to replicate a swing arm part from a set of drawings. The assignment style is similar to a portion of the Onshape Associate Certification test.
+
+### Evidence 
+
+![Skateboard](https://user-images.githubusercontent.com/60942957/138326912-743dfa8b-e33b-4f68-9275-59c108d83b03.png)
+
+### Part Link
+[Skateboard Part](https://cvilleschools.onshape.com/documents/cf0bfc9493457f1cf7099433/w/934b53d3cc8aad2d7d25f96b/e/82f38d0a851993b495aba014)
+
+
+### Reflection
+The tutorial - although a little slow - was very helpful in teaching me new things to do in onshape that will make future projects go much faster.
+
+
+
 # Skateboard
 
 ### Assignment Description
