@@ -4,7 +4,7 @@
 * [Python_Dice_Roller](#PythonDiceRoller)
 * [Python_Calculator](#Python_Calculator)
 * [Quadratic Calculator](#Quadratic_Calculator)
-* [Strings and Loops](#StringsandLoops)
+* [Strings and Loops](#Strings_and_Loops)
 * [Man Shaped Pinata](#MSP)
 * [Skateboard](#Skateboard)
 
