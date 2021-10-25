@@ -7,6 +7,7 @@
 * [Strings and Loops](#Strings_and_Loops)
 * [Man Shaped Pinata](#MSP)
 * [Skateboard](#Skateboard)
+* [Foobar Challenge 1](#foobar1)
 
 ## Python_Dice_Roller
 
