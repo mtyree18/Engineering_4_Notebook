@@ -7,10 +7,11 @@ def solution(pegs):
         coefficient = 2/3
     else:
         coefficient = 2
-    for i in range (distances):
-        print (i)
+    for i in pegs:
         distance = pegs[i + 1] - pegs[i]
-        r0 = r0 + (coefficient * (sign * distance))
+        r0 = r0 - (sign * distance)
         sign = -1 * sign
+        print (r0)
+    
         
 solution([4, 30, 50])
