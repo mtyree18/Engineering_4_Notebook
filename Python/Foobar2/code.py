@@ -10,11 +10,10 @@ def solution(pegs):
         coefficient = 2
     for i in range (distances):
         distance = distance + [pegs[i + 1] - pegs[i]]
-    print (distance)
-    for x in range (len(distance)):
+    for x in range ((len(distance))-1):
         print (x)
-        #r0 = (distance[i] + (sign * distance[i+1]))
-        #print (r0)
+        r0 = (distance[i] + (sign * distance[i+1]))
+        print (r0)
         sign = sign * -1
     
 solution([4, 30, 50])
