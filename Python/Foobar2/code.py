@@ -12,11 +12,11 @@ def solution(pegs):
         distance = distance + [pegs[i + 1] - pegs[i]]
     for x in range ((len(distance))-1):
         #print (x)
-        r0 = (distance[x] + (sign * distance[x+1]))
+        r0.append(distance[x] + (sign * distance[x+1]))
         sign = sign * -1
     r0 = r0 * coefficient
-    #if (r0 < 1):
-        
-    print (r0)
+    if (r0[0] < 1):
+        r0.append()
+        print (r0)
     
 solution([4, 30, 50])
