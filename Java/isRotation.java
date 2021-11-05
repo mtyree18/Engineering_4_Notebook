@@ -5,7 +5,14 @@ public class isRotation{
       String reverse = "";
       boolean isReverse = false;
       char ch;
+      firstLetter = var1[0];
       
+      test = indexOf(var2 firstLetter);
+      System.out.print(test);
+   }
+}
+        /*  
+      }
       //reverses var1
       for (int i=0; i < var1.length(); i++) {
          ch = var1.charAt(i);
@@ -25,7 +32,6 @@ public class isRotation{
       return (isReverse);
    }
    
-   //calls the function
    public static void main(String[] args) {
       isRotation("racecar", "racecar");
    }
