@@ -5,9 +5,9 @@ public class isRotation{
       String reverse = "";
       boolean isReverse = false;
       char ch;
-      firstLetter = var1[0];
+      String firstLetter = var1[0];
       
-      test = indexOf(var2 firstLetter);
+      test = var2.indexOf(firstLetter);
       System.out.print(test);
    }
 }
@@ -36,3 +36,4 @@ public class isRotation{
       isRotation("racecar", "racecar");
    }
 }
+*/
