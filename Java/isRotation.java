@@ -1,16 +1,17 @@
 public class isRotation{ 
-   static boolean isRotation(String var1, String var2) {
+   static String isRotation(String var1, String var2) {
        
       //variables
       String reverse = "";
       boolean isReverse = false;
-      char ch;
-      String firstLetter = var1[0];
+      char ch, var2Start;
+      int test;
+      char firstLetter = var1.charAt(0);
+      var2Start = var2.indexOf(firstLetter);
       
-      test = var2.indexOf(firstLetter);
-      System.out.print(test);
+      System.out.print(var2Start);
+      return ("hi");
    }
-}
         /*  
       }
       //reverses var1
@@ -31,8 +32,13 @@ public class isRotation{
       System.out.println(isReverse);
       return (isReverse);
    }
-   
+   */
+
    public static void main(String[] args) {
+      isRotation("racecar", "racecar");
+   }
+
+}
       isRotation("racecar", "racecar");
    }
 }
