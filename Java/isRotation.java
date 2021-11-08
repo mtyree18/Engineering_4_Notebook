@@ -3,7 +3,7 @@ public class isRotation{
        
       //variables
       String reverse = "";
-      boolean isReverse = false;
+      boolean isReverse = false, endValue = true;
       char ch;
       int test, pos;
       char firstLetter = var1.charAt(0);
@@ -14,18 +14,19 @@ public class isRotation{
         if (pos == var1.length()) {
             pos = 0;
             if (var1.charAt(i) != var2.charAt(pos)) {
-                return false;
+                endValue = false;
             }
-            pos++;
         }
-        System.out.print("i: " + i);
-        System.out.print("pos: " + pos);
+        System.out.println("i: " + i);
+        System.out.println("pos: " + pos);
+        System.out.println("endValue: " + endValue);
+        pos++;
       }
-      return true;
+      return endValue;
    }
 
    public static void main(String[] args) {
-      isRotation("goat", "atgo");
+      isRotation("goat", "tore");
    }
 
 }
