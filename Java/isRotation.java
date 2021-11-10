@@ -7,6 +7,7 @@ public class isRotation{
         char firstLetter;
         boolean endValue = true;
         
+        //setting the variables to be certain things when there is an empty string (I need to skip the loop)
         if (var1.length() < 1 && var2.length() > 0) {
             endValue = false;
             var1Length = 0;
