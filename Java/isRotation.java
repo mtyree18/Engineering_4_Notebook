@@ -3,7 +3,7 @@ public class isRotation{
         
         //variables
         int var1Length;
-        int pos;
+        int pos = 0;
         char firstLetter;
         boolean endValue = true;
         
@@ -61,6 +61,6 @@ public class isRotation{
     }
 
     public static void main(String[] args) {
-        isRotation("", "");
+        isRotation("goat", "tgoa");
     }
 }
