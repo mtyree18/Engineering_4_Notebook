@@ -37,7 +37,9 @@ public class isRotation{
         //I made a loop that runs for the duration of the length of var1
         for (int i = 0; i < var1Length; i++) {
             
-            //says that if the first letter from var1 isn't found in var2, then break the loop
+            //pos was equating to -1 when it coudn't find firstLetter in var2
+            //so if the letter isn't even in the word then it is obviously not a rotation
+            //so I set the endValue to false and did a break which 
             if (pos < 0) {
                 endValue = false;
                 break;
