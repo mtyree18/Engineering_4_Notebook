@@ -39,19 +39,19 @@ public class isRotation{
             
             //pos was equating to -1 when it coudn't find firstLetter in var2
             //so if the letter isn't even in the word then it is obviously not a rotation
-            //so I set the endValue to false and did a break which 
+            //so I set the endValue to false and did a break which skips the rest of the for loop
             if (pos < 0) {
                 endValue = false;
                 break;
             }
             
-            // says that if the variables don't have the same length then return false
+            //if the length of the variales is different then they aren't the same so I set it to false and skipped the rest of the loop again
             if (var1Length != var2.length()) {
                 endValue = false;
                 break;
             }
             
-            //says to reset the position to 0 if it gets to the end of the word
+            //says to reset the position to 0 if it gets to the end of the word so that 
             if (pos == var1Length) {
                 pos = 0;
             }
