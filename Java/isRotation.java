@@ -3,7 +3,6 @@ public class isRotation{
        
         //variables
         boolean endValue = true;
-        char ch;
         int pos;
         char firstLetter = var1.charAt(0);
         pos = var2.indexOf(firstLetter);
@@ -17,23 +16,31 @@ public class isRotation{
                 break;
             }
             
+            if (var1.length() != var2.length()) {
+                endValue = false;
+                break;
+            }
+            
             //says to reset the position to 0 if it gets to the end 
             if (pos == var1.length()) {
                 pos = 0;
+            }
             if (var1.charAt(i) != var2.charAt(pos)) {
                 endValue = false;
+                break;
+                System.out.println("i: " + i);
+                System.out.println("pos: " + pos);
+                System.out.println("letter at pos: " + var2.charAt(pos));
+                System.out.println("letter at i: " + var1.charAt(i));
             }
-        }
-        System.out.println("i: " + i);
-        System.out.println("pos: " + pos);
         pos++;
-      }
-      System.out.println("endValue: " + endValue);
-      return endValue;
-   }
+        }
+    System.out.println("endValue: " + endValue);
+    return endValue;
+    }
 
-   public static void main(String[] args) {
-      isRotation("goat", "atgo");
-   }
+    public static void main(String[] args) {
+        isRotation("goat", "oatg");
+    }
 
 }
