@@ -8,6 +8,13 @@ public class isRotation{
         boolean endValue = true;
         
         //setting the variables to be certain things when there is an empty string (I need to skip the loop)
+        //the way I wrote the program relied on there being a string with something in it for it to run the for loop
+        //so I need to skip the loop and return true or false depending on if they are both empty or just one
+        //either way I need to skip the loop so I made the variable that the loop relied on 0 so that it would skip over it
+        
+        //I set the endValue to false if one string was empty and the other wasn't because they were obviously not the same then I skipped the loop
+        //I set the endValue to true if both strings were empty because those are the same, then I skipped the loop
+        //I set the variables to all be normal (what I would have if there wasn't that stupid test case with the empty string)
         if (var1.length() < 1 && var2.length() > 0) {
             endValue = false;
             var1Length = 0;
@@ -17,13 +24,17 @@ public class isRotation{
             endValue = true;
             var1Length = 0;
         }
+        
+        //firstLetter stores the first letter of var1
+        //pos stores where firstLetter appears in var2
+        //var1Length was created so that I could skip the loop by setting it to zero, but also use it to run the loop if it was greater than 0
         else {
             firstLetter = var1.charAt(0);
             pos = var2.indexOf(firstLetter);
             var1Length = var1.length();
         }
         
-        //loop checking for same letters
+        //I made a loop that runs for the duration of the length of var1
         for (int i = 0; i < var1Length; i++) {
             
             //says that if the first letter from var1 isn't found in var2, then break the loop
