@@ -8,6 +8,7 @@
 * [Man Shaped Pinata](#MSP)
 * [Skateboard](#Skateboard)
 * [Foobar Challenge 1](#foobar1)
+* [Switch Blink](#SwitchBlink)
 
 ## Python_Dice_Roller
 
@@ -178,3 +179,21 @@ N/A
 
 ### Reflection
 
+
+# Switch_Blink
+
+### Assignment Description
+
+This assignment asked me to create a python script that made each LED blink opposite of each other. For example when one LED blinks on, the other blinks off.
+
+### Evidence
+
+![Switch Blink GIF](https://user-images.githubusercontent.com/60942957/142901354-82841d7f-b3a1-4828-96e4-89cab8265c41.gif)
+
+### Wiring
+
+![Switch Blink Circuit Diagram](https://user-images.githubusercontent.com/60942957/142903969-53c0e3c1-8a57-4f98-a00b-dda0ebdd717c.png)
+
+### Reflection
+
+This assignment taught me how to apply my python skills I learned earlier to a situation in the real world. I also learned how to write the commands that turn an LED on or off.
