@@ -2,7 +2,7 @@ import time
 import RPi.GPIO as GPIO
 
 # Pin definition
-shutdown_pin = 17
+shutdown_pin = 21
 
 # Suppress warnings
 GPIO.setwarnings(False)
@@ -13,9 +13,6 @@ GPIO.setmode(GPIO.BCM)
 # Use built-in internal pullup resistor so the pin is not floating
 # if using a momentary push button without a resistor.
 GPIO.setup(shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
-# Use Qwiic pHAT's pullup resistor so that the pin is not floating
-GPIO.setup(shutdown_pin, GPIO.IN)
 
 # modular function to shutdown Pi
 def shut_down():
