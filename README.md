@@ -9,6 +9,7 @@
 * [Skateboard](#Skateboard)
 * [Foobar Challenge 1](#foobar1)
 * [Switch Blink](#Switch_Blink)
+* [Safe Shutdown](#Safe_Shutdown)
 
 ## Python_Dice_Roller
 
@@ -197,3 +198,25 @@ This assignment asked me to create a python script that made each LED blink oppo
 ### Reflection
 
 This assignment taught me how to apply my python skills I learned earlier to a situation in the real world. I also learned how to write the commands that turn an LED on or off.
+
+
+# Safe_Shutdown
+
+### Assignment Description
+
+This assignment asked me to follow and edit a tutorial in which they made a safe shutdown button for their raspberry pi. When you press the button it should restart, and when you hold the button it should shut down.
+
+### Evidence
+
+![Safe Shutdown GIF](https://user-images.githubusercontent.com/60942957/144091205-9e264a10-218a-431d-9498-3b1b64f51827.gif)
+
+### Wiring
+
+![Safe Shutdown Wiring Diagram](https://user-images.githubusercontent.com/60942957/144092289-2aad24e5-2d30-4184-8309-bca6b268847e.png)
+
+### Reflection
+
+I encountered lots of problems in this assignment. I messed up the editing of the tutorial, which led me down a road of trying to figure out what I did wrong. However I am actually very glad I messed this up because I learned a lot about file structure and how rc.local works, and why we were editing it in the first place. I learned about the SD card's file structure, and why we needed to change the path in the line we added to rc.local. Sometimes horribly misreading the instructions can be very valuable, and can ironically teach you a lot.
+
+
+
