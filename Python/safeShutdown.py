@@ -1,19 +1,21 @@
 import time
-import RPi.GPIO as GPIO
-
+import RPi.GPIO as GPIO 
 # Pin definition
-shutdown_pin = 21
-
+reset_shutdown_pin = 21
 # Suppress warnings
 GPIO.setwarnings(False)
-
 # Use "GPIO" pin numbering
 GPIO.setmode(GPIO.BCM)
-
-# Use built-in internal pullup resistor so the pin is not floating
-# if using a momentary push button without a resistor.
-GPIO.setup(shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
-
+# Use built-in pullup resistor so the pin is not floating
+GPIO.setup(reset_shutdown_pin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+# modular function to restart Pi
+def restart():
+    print("restarting Pi")
+    command = "/usr/bin/sudo /sbin/shutdown -r now"
+    import subprocess
+    process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+    output = process.communicate()[0]
+    print(output)
 # modular function to shutdown Pi
 def shut_down():
     print("shutting down")
@@ -22,16 +24,25 @@ def shut_down():
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
     print(output)
-
-
-
-
-# Check button if we want to shutdown the Pi safely
 while True:
-    #short delay, otherwise this code will take up a lot of the Pi's processing power
+    #short delay, to reduce computational requirements
     time.sleep(0.5)
-
-    # For troubleshooting, uncomment this line to output buton status on command line
-    #print('GPIO state is = ', GPIO.input(shutdown_pin))
-    if GPIO.input(shutdown_pin)== False:
-        shut_down()
+    # wait for a button press with switch debounce
+    channel = GPIO.wait_for_edge(reset_shutdown_pin, GPIO.FALLING, bouncetime=200)
+    if channel is None:
+        print('Timeout occurred')
+    else:
+        print('Edge detected on channel', channel)
+        # For troubleshooting, uncomment this line
+        #print('GPIO state is = ', GPIO.input(reset_shutdown_pin))
+        counter = 0
+        while GPIO.input(reset_shutdown_pin) == False:
+            # For troubleshooting, uncomment this line to view the counter
+            #print(counter)
+            counter += 1
+            time.sleep(0.5)
+            # long button press
+            if counter > 4:
+                shut_down()
+        #if short button press, restart!
+        restart()
