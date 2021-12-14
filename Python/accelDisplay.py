@@ -39,10 +39,9 @@ font = ImageFont.load_default()
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 #font = ImageFont.truetype('Minecraftia.ttf', 8)
 
-while True:
-  accel = lsm303.read()
-  accel_x, accel_y = accel
-  time.sleep(0.5)
+accel = lsm303.read()
+accel_x, accel_y = accel
+time.sleep(0.5)
 
 # Write two lines of text.
 draw.text((x, top),    accel_x,  font=font, fill=255)
