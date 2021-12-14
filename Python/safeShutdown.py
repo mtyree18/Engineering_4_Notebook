@@ -19,7 +19,7 @@ def restart():
 # modular function to shutdown Pi
 def shut_down():
     print("shutting down")
-    command = "/usr/bin/sudo /sbin/shutdown -h now"
+    command = "/usr/bin/sudo /sbin/shutdown now"
     import subprocess
     process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
     output = process.communicate()[0]
