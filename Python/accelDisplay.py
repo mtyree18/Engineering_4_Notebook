@@ -41,12 +41,11 @@ font = ImageFont.load_default()
 
 while True:
   accel = lsm303.read()
-  accel_x, accel_y, accel_z = accel
+  accel_x, accel_y = accel
   time.sleep(0.5)
 
 # Write two lines of text.
 draw.text((x, top),    accel_x,  font=font, fill=255)
 draw.text((x, top+20), accel_y, font=font, fill=255)
-draw.text((x, top+40), accel_z, font=font, fill=255)
 # Pin definition
 reset_pin = 24
