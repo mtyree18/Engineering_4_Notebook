@@ -33,6 +33,9 @@ width = disp.width
 height = disp.height
 image = Image.new('1', (width, height))
 
+#get drawing object to draw on image.
+draw = ImageDraw.Draw(image)
+
 font = ImageFont.load_default()
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
