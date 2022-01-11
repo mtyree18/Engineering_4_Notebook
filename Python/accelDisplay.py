@@ -11,12 +11,11 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 
+x = 0
+
 # Raspberry Pi pin configuration:
 RST = 24
 # Note the following are only used with SPI:
-DC = 23
-SPI_PORT = 0
-SPI_DEVICE = 0
 
 disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
 
@@ -31,6 +30,13 @@ disp.display()
 # Make sure to create image with mode '1' for 1-bit color.
 width = disp.width
 height = disp.height
+
+padding = 3
+top = padding
+bottom = height-padding
+left = padding
+right = width-padding
+
 image = Image.new('1', (width, height))
 
 #get drawing object to draw on image.
