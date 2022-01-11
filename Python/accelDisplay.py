@@ -36,11 +36,21 @@ image = Image.new('1', (width, height))
 #get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
 
+#load font
 font = ImageFont.load_default()
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 #font = ImageFont.truetype('Minecraftia.ttf', 8)
+
+#black filled rectangle to clear space
+draw.rectangle((0,0,width,height), outline=0, fill=0)
+
+#defining spacing
+padding = 2
+top = padding
+bottom = height-padding
+x = padding
 
 accel = lsm303.read()
 accel_x, accel_y = accel
@@ -49,5 +59,7 @@ time.sleep(0.5)
 # Write two lines of text.
 draw.text((x, top),    accel_x,  font=font, fill=255)
 draw.text((x, top+20), accel_y, font=font, fill=255)
+
+disp.image(image)
 # Pin definition
 reset_pin = 24
