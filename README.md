@@ -10,6 +10,7 @@
 * [Foobar Challenge 1](#foobar1)
 * [Switch Blink](#Switch_Blink)
 * [Safe Shutdown](#Safe_Shutdown)
+* [Accel Display](#Accel_Display)
 
 ## Python_Dice_Roller
 
@@ -219,4 +220,14 @@ This assignment asked me to follow and edit a tutorial in which they made a safe
 I encountered lots of problems in this assignment. I messed up the editing of the tutorial, which led me down a road of trying to figure out what I did wrong. However I am actually very glad I messed this up because I learned a lot about file structure and how rc.local works, and why we were editing it in the first place. I learned about the SD card's file structure, and why we needed to change the path in the line we added to rc.local. Sometimes horribly misreading the instructions can be very valuable, and can ironically teach you a lot.
 
 
+## Accel_Display
 
+### Assignment Description
+
+This assignment asked me to get data from an accelerometer and display it on an I2C device
+
+### Evidence
+
+### Wiring
+
+### Reflection
