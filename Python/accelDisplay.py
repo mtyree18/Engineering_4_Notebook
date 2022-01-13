@@ -55,7 +55,7 @@ while True:
 
 # Write two lines of text.
   draw.text((0, top), 'Accel X={0}'.format(accel_x), font=font, fill=255)
-  draw.text((0, top+20), 'Accel Y={1}'.format(accel_y), font=font, fill=255)
+  draw.text((0, top+20), 'Accel Y={0}'.format(accel_y), font=font, fill=255)
   
 # Display image.
   disp.image(image)
