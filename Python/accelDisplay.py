@@ -55,8 +55,8 @@ while True:
 
 # Write two lines of text.
   draw.text((0, top), 'Accel X={0}'.format(round(accel_x/103, 3)), font=font, fill=255)
-  draw.text((0, top+10), 'Accel Y={0}'.format(accel_y/103), font=font, fill=255)
-  draw.text((0, top+20), 'Accel Z={0}'.format(accel_z/103), font=font, fill=255)  
+  draw.text((0, top+10), 'Accel Y={0}'.format(round(accel_y/103, 3)), font=font, fill=255)
+  draw.text((0, top+20), 'Accel Z={0}'.format(round(accel_z/103, 3)), font=font, fill=255)  
   
 # Display image.
   disp.image(image)
