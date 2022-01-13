@@ -1,3 +1,4 @@
+import Adafruit_LSM303
 import time
 
 import Adafruit_GPIO.SPI as SPI
@@ -7,6 +8,13 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageFont
 
+lsm303 = Adafruit_LSM303.LSM303()
+
+while True:
+  accel, mag = lsm303.read()
+  accel_x, accel_y, accel_z = accel
+  mag_x, mag_y, mag_z = mag
+  time.sleep(0.5)
 
 # Raspberry Pi pin configuration:
 RST = 24
@@ -64,7 +72,7 @@ font = ImageFont.load_default()
 
 # Write two lines of text.
 draw.text((x, top),    'Hello',  font=font, fill=255)
-draw.text((x, top+20), 'World!', font=font, fill=255)
+draw.text((x, top+20), 'Accel X={0}'.format(accel_x), font=font, fill=255)
 
 # Display image.
 disp.image(image)
