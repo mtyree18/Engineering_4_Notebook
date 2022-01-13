@@ -10,12 +10,6 @@ from PIL import ImageFont
 
 lsm303 = Adafruit_LSM303.LSM303()
 
-while True:
-  accel, mag = lsm303.read()
-  accel_x, accel_y, accel_z = accel
-  mag_x, mag_y, mag_z = mag
-  time.sleep(0.5)
-
 # Raspberry Pi pin configuration:
 RST = 24
 # Note the following are only used with SPI:
@@ -39,41 +33,30 @@ image = Image.new('1', (width, height))
 # Get drawing object to draw on image.
 draw = ImageDraw.Draw(image)
 
-draw.rectangle((0,0,width,height), outline=0, fill=0)
+while True:
+  accel, mag = lsm303.read()
+  accel_x, accel_y, accel_z = accel
+  mag_x, mag_y, mag_z = mag
+  draw.rectangle((0,0,width,height), outline=0, fill=0)
 
 # Draw some shapes.
 # First define some constants to allow easy resizing of shapes.
-padding = 2
-shape_width = 20
-top = padding
-bottom = height-padding
-# Move left to right keeping track of the current x position for drawing shapes.
-x = padding
-# Draw an ellipse.
-draw.ellipse((x, top , x+shape_width, bottom), outline=255, fill=0)
-x += shape_width+padding
-# Draw a rectangle.
-draw.rectangle((x, top, x+shape_width, bottom), outline=255, fill=0)
-x += shape_width+padding
-# Draw a triangle.
-draw.polygon([(x, bottom), (x+shape_width/2, top), (x+shape_width, bottom)], outline=255, fill=0)
-x += shape_width+padding
-# Draw an X.
-draw.line((x, bottom, x+shape_width, top), fill=255)
-draw.line((x, top, x+shape_width, bottom), fill=255)
-x += shape_width+padding
+  padding = 2
+  shape_width = 20
+  top = padding
+  bottom = height-padding
 
 # Load default font.
-font = ImageFont.load_default()
+  font = ImageFont.load_default()
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
 #font = ImageFont.truetype('Minecraftia.ttf', 8)
 
 # Write two lines of text.
-draw.text((x, top),    'Hello',  font=font, fill=255)
-draw.text((x, top+20), 'Accel X={0}'.format(accel_x), font=font, fill=255)
-
+  draw.text((x, top),    'Hello',  font=font, fill=255)
+  draw.text((x, top+20), 'Accel X={0}'.format(accel_x), font=font, fill=255)
+  
 # Display image.
-disp.image(image)
-disp.display()
+  disp.image(image)
+  disp.display()
