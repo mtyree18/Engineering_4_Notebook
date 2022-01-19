@@ -228,6 +228,8 @@ This assignment asked me to get data from an accelerometer and display it on an 
 
 ### Evidence
 
+
+
 ### Wiring
 
 ### Reflection
