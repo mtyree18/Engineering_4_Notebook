@@ -228,7 +228,7 @@ This assignment asked me to get data from an accelerometer and display it on an 
 
 ### Evidence
 
-
+![image](https://user-images.githubusercontent.com/60942957/150192684-a84b95a0-fa0b-4ea8-b8c4-ae306b5aad53.png)
 
 ### Wiring
 
