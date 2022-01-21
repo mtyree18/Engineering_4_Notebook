@@ -232,7 +232,7 @@ This assignment asked me to get data from an accelerometer and display it on an 
 
 ### Wiring
 
-
+![wiring_diagram](https://user-images.githubusercontent.com/60942957/150585120-2e0f745a-bc14-433f-9e84-05205bfc75fa.jpg)
 
 ### Reflection
 
