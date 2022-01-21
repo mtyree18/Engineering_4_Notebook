@@ -232,6 +232,8 @@ This assignment asked me to get data from an accelerometer and display it on an 
 
 ### Wiring
 
+
+
 ### Reflection
 
 This assignment taught me how to modify other code and take the parts I need from it to make my own program. This assignment was like a test of the skills I had built from other assignments. Things like understanding certain lines of code really helped me progress through this assignment. This assignment also helped me understand why having two devices communicate on this same pins is useful.
