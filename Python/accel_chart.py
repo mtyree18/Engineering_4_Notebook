@@ -1,0 +1,61 @@
+import Adafruit_LSM303
+import time
+
+import Adafruit_GPIO.SPI as SPI
+import Adafruit_SSD1306
+
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+lsm303 = Adafruit_LSM303.LSM303()
+
+# Raspberry Pi pin configuration:
+RST = 24
+# Note the following are only used with SPI:
+DC = 23
+SPI_PORT = 0
+SPI_DEVICE = 0
+
+disp = Adafruit_SSD1306.SSD1306_128_64(rst=RST, i2c_address=0x3d)
+disp.begin()
+
+# Clear display.
+disp.clear()
+disp.display()
+
+# Create blank image for drawing.
+# Make sure to create image with mode '1' for 1-bit color.
+width = disp.width
+height = disp.height
+image = Image.new('1', (width, height))
+
+# Get drawing object to draw on image.
+draw = ImageDraw.Draw(image)
+
+while True:
+  accel, mag = lsm303.read()
+  accel_x, accel_y, accel_z = accel
+  mag_x, mag_y, mag_z = mag
+  draw.rectangle((0,0,width,height), outline=0, fill=0)
+
+# Draw some shapes.
+# First define some constants to allow easy resizing of shapes.
+  padding = 2
+  shape_width = (abs(accel_x)) / 2
+  top = padding
+  bottom = height-padding
+  x = 5
+
+# Load default font.
+  font = ImageFont.load_default()
+
+
+# Write the accel values in 3 lines of text.
+  draw.text((0, top), 'X={0}'.format(round(accel_x/103, 3)), font=font, fill=255)
+
+  draw.rectangle((x, top+40, x+shape_width, bottom-5), outline=255, fill=255)
+
+# Display image.
+  disp.image(image)
+  disp.display()
