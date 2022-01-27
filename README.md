@@ -251,7 +251,7 @@ This assignment asked me to make the display setup I have so far able to be run 
 
 ### Wiring
 
-
+![Headless Wiring](https://user-images.githubusercontent.com/60942957/151405925-354c2ec9-e4ab-447a-b674-9ad12416155d.jpg)
 
 ### Reflection
 
