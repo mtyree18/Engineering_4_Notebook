@@ -244,7 +244,7 @@ This assignment taught me how to modify other code and take the parts I need fro
 
 ### Assignment Description
 
-This assignment asked me to make the display setup I have so far able to be run seperate from a computer.
+This assignment asked me to make the display setup be able to be run seperate from a computer.
 
 ### Evidence
 
