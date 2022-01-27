@@ -237,3 +237,22 @@ This assignment asked me to get data from an accelerometer and display it on an 
 ### Reflection
 
 This assignment taught me how to modify other code and take the parts I need from it to make my own program. This assignment was like a test of the skills I had built from other assignments. Things like understanding certain lines of code really helped me progress through this assignment. This assignment also helped me understand why having two devices communicate on this same pins is useful.
+
+
+## Headless_Accelerometer
+
+### Assignment Description
+
+This assignment asked me to make the display setup I have so far able to be run seperate from a computer.
+
+### Evidence
+
+![Headless GIF](https://user-images.githubusercontent.com/60942957/151402080-4c6c0609-1d46-421f-aa00-ad3dc2775fe8.gif)
+
+### Wiring
+
+
+
+### Reflection
+
+This assignment taught me how important it is to be able to run scripts outside of a computer. For Pi in the Sky I won't be able to run the code with commands because you can't fly into the sky with your pi (that rhymed). I also got a better understanding of how the pi runs on startup, and which files I need to edit in the future to run things on startup. Overall this assignment was very useful and it was satisfying to get the whole device working.
