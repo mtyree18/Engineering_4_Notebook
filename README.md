@@ -11,6 +11,7 @@
 * [Switch Blink](#Switch_Blink)
 * [Safe Shutdown](#Safe_Shutdown)
 * [Accel Display](#Accel_Display)
+* [Headless Accelerometer](#Headless_Accelerometer)
 
 ## Python_Dice_Roller
 
