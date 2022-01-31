@@ -267,7 +267,7 @@ This assignment asked me to make 2 programs that take pictures with the camera t
 
 ### Evidence
 
-
+![picsolarize](https://user-images.githubusercontent.com/60942957/151846944-2193a8ce-2c9f-49fe-bf76-3f1539e0df27.jpg)
 
 ### Wiring
 
