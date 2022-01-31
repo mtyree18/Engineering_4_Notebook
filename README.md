@@ -257,3 +257,22 @@ This assignment asked me to make the display setup be able to be run seperate fr
 ### Reflection
 
 This assignment taught me how important it is to be able to run scripts outside of a computer. For Pi in the Sky I won't be able to run the code with commands because you can't fly into the sky with your pi (that rhymed). I also got a better understanding of how the pi runs on startup, and which files I need to edit in the future to run things on startup. Overall this assignment was very useful and it was satisfying to get the whole device working.
+
+
+## Pi_Camera
+
+### Assignment Description
+
+This assignment asked me to make 2 programs that take pictures with the camera that can be added to the raspberry pi.
+
+### Evidence
+
+
+
+### Wiring
+
+
+
+### Reflection
+
+This assignment made me realize the potential of the Pis. There are so many cool attachments you can add to the pi and they all have code online that you can use to modify what the attachments do. This assignment also made me think about how I can incorporate it into my pi in the sky project. It would be a cool modification to take pictures when our pi is in the air.
