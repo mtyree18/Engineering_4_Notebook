@@ -10,5 +10,5 @@ for i in effects:
 		camera.start_preview()
 		time.sleep(2)
 		camera.image_effect = i
-		camera.capture('pic.jpg')
+		camera.capture('pic"{i}".jpg')
 		print("done")
