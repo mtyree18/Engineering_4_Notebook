@@ -271,7 +271,7 @@ This assignment asked me to make 2 programs that take pictures with the camera t
 
 ### Wiring
 
-
+![unnamed](https://user-images.githubusercontent.com/60942957/151848114-74f9aa89-5184-4e61-9464-f66e937e792a.jpg)
 
 ### Reflection
 
