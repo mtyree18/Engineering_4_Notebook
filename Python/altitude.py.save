@@ -1,11 +1,7 @@
 import time
 import board
 import adafruit_mpl3115a2
-from gpiozero import Servo
 
-myGPIO = 18
-
-servo = Servo(myGPIO)
 
 # Create sensor object, communicating over the board's default I2C bus
 i2c = board.I2C()  # uses board.SCL and board.SDA
@@ -28,21 +24,10 @@ print(start)
 
 max = 0
 
-current = 0
-
-servo.mid()
-
 # Main loop to read the sensor values and print them every second.
-while max - current < 1:
-	altitude = sensor.altitude - start
-	current = altitude
-	print("Altitude: {0:0.3f} meters".format(altitude))
-	time.sleep(1.0)
-	print("Maximum Altitude: {0:0.3f} meters".format(max))
+while True:
+altitude = sensor.altitude - start
+    print("Altitude: {0:0.3f} meters".format(altitude))
+    time.sleep(1.0)
 	if current > max:
 		max = current
-
-print("fired")
-servo.min()
-time.sleep(1)
-
